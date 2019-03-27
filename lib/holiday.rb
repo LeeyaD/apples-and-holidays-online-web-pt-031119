@@ -67,7 +67,7 @@ def all_supplies_in_holidays(holiday_hash)
     puts "#{season}:".to_s.capitalize
       holidays.collect do |holiday, supplies|
         ####---still |symbol,  array|
-        holiday.to_s.split("_").collect {|day| day.capitalize!}.join(" ")
+        new_holiday = holiday.to_s.split("_").collect {|day| day.capitalize!}.join(" ")
         binding.pry
         puts "  #{holiday}: " + supplies.join(", ")
       end
