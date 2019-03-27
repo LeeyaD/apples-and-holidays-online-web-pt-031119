@@ -71,6 +71,7 @@ def all_supplies_in_holidays(holiday_hash)
         holiday = holiday.to_s.gsub("_", " ").split
           holiday.collect do |h|
             h.capitalize!
+            h.join(" ")
           end
           holiday.join(" ")
           binding.pry
