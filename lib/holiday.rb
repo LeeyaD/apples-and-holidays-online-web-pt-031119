@@ -81,6 +81,7 @@ def all_holidays_with_bbq(holiday_hash)
         holiday.to_s.split(" ")
         binding.pry
       end
+      holiday
     end
   end
 end
