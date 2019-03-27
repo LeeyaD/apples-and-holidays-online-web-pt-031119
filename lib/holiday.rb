@@ -65,20 +65,19 @@ def all_supplies_in_holidays(holiday_hash)
   # etc.
   holiday_hash.each do |season, holidays|
     puts "#{season}:".to_s.capitalize
-      #binding.pry
       holidays.collect do |holiday, supplies|
-        #binding.pry
         holiday = holiday.to_s.gsub("_", " ").split
           holiday.collect do |h|
             h.capitalize!
           end
-          holiday.join(" ")
-          binding.pry
-        #puts "  #{holiday}: " + supplies.join(", ")
+          #holiday.join(" ")
+          #binding.pry
       end
+      holiday.join(" ")
+      binding.pry
   end
 end
-
+#puts "  #{holiday}: " + supplies.join(", ")
 def all_holidays_with_bbq(holiday_hash)
   # return an array of holiday names (as symbols) where supply lists
   # include the string "BBQ"
