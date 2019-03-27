@@ -1,0 +1,28 @@
+
+[1mFrom:[0m /home/LeeyaD/apples-and-holidays-online-web-pt-031119/lib/holiday.rb @ line 71 Object#all_supplies_in_holidays:
+
+    [1;34m58[0m: [32mdef[0m [1;34mall_supplies_in_holidays[0m(holiday_hash)
+    [1;34m59[0m:   [1;34m# iterate through holiday_hash and print items such that your readout resembles:[0m
+    [1;34m60[0m:   [1;34m# Winter:[0m
+    [1;34m61[0m:   [1;34m#   Christmas: Lights, Wreath[0m
+    [1;34m62[0m:   [1;34m#   New Years: Party Hats[0m
+    [1;34m63[0m:   [1;34m# Summer:[0m
+    [1;34m64[0m:   [1;34m#   Fourth Of July: Fireworks, BBQ[0m
+    [1;34m65[0m:   [1;34m# etc.[0m
+    [1;34m66[0m:   holiday_hash.each [32mdo[0m |season, holidays|
+    [1;34m67[0m:     puts [31m[1;31m"[0m[31m#{season}[0m[31m:[1;31m"[0m[31m[0m.to_s.capitalize
+    [1;34m68[0m:       holidays.collect [32mdo[0m |holiday, supplies|
+    [1;34m69[0m:         [1;34m#still |symbol,  array|[0m
+    [1;34m70[0m:         holiday = holiday.to_s.gsub([31m[1;31m"[0m[31m_[1;31m"[0m[31m[0m, [31m[1;31m"[0m[31m [1;31m"[0m[31m[0m).split
+ => [1;34m71[0m:           binding.pry
+    [1;34m72[0m:           holiday.collect [32mdo[0m |h|
+    [1;34m73[0m:             h.capitalize!
+    [1;34m74[0m:           [32mend[0m
+    [1;34m75[0m:           [1;34m#holiday.join(" ")[0m
+    [1;34m76[0m:           [1;34m#binding.pry[0m
+    [1;34m77[0m:       [32mend[0m
+    [1;34m78[0m:       holiday.join([31m[1;31m"[0m[31m [1;31m"[0m[31m[0m)
+    [1;34m79[0m:       binding.pry
+    [1;34m80[0m:   [32mend[0m
+    [1;34m81[0m: [32mend[0m
+
