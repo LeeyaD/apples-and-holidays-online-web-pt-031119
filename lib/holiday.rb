@@ -75,7 +75,7 @@ def all_supplies_in_holidays(holiday_hash)
           #holiday.join(" ")
           binding.pry
       #<--end
-      holiday.join(" ")
+      #holiday.join(" ")
       #binding.pry
   end
 end
