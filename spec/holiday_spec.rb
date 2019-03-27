@@ -72,6 +72,7 @@ describe "holiday_supplies_hash" do
       expect(holiday_supplies[:winter].keys).not_to include(:valentines_day)
 
       valentines_day_supplies = ["Cupid Cut-Out", "Candy Hearts"]
+
       add_new_holiday_with_supplies(holiday_supplies, :winter, :valentines_day, valentines_day_supplies)
 
       expect(holiday_supplies[:winter].keys).to include(:valentines_day)
