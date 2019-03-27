@@ -68,7 +68,7 @@ def all_supplies_in_holidays(holiday_hash)
       holidays.collect do |holiday, supplies|
         #still |symbol,  array|
         holiday = holiday.to_s.gsub("_", " ").split
-          binding.pry
+          #now it's |array, array|
           holiday.collect do |h|
             h.capitalize!
           end
