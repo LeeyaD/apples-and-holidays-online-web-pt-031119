@@ -80,7 +80,8 @@ def all_holidays_with_bbq(holiday_hash)
       if supplies.include?("BBQ")
         holiday.to_s.split(" ")
       end
-      holidays
+      #holidays
     end
   end
+  holiday_hash
 end
